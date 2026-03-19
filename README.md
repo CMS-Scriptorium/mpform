@@ -1,16 +1,16 @@
 # mpForm
 The popular form alternative for the [WBCE][1] / WebsiteBaker CMS
 
-### requirements
+### Requirements
 - PHP >= 8.2 (8.4 recommended)
 - [WBCE][1] >= 1.6.x
 
 For questions and/or requests please use the [WBCE forum][2]
 
-### install
+### Install
 For details see the official [Help][3]
 
-### license
+### License
 GNU General Public License
 
 [1]: https://wbce.org/de/wbce/
