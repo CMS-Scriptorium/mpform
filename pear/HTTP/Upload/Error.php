@@ -36,6 +36,8 @@ class HTTP_Upload_Error extends PEAR
      */
     protected $html = false;
 
+    protected int $_maxsize = 0;
+
     /**
      * @var array
      */
