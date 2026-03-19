@@ -1,5 +1,5 @@
 # mpForm
-## The popular form alternative for the [WBCE][1] / WebsiteBaker CMS
+The popular form alternative for the [WBCE][1] / WebsiteBaker CMS
 
 ### Requirements
 - PHP 8.2 (8.4 recommended)
