@@ -36,6 +36,10 @@ class HTTP_Upload_Error extends PEAR
      */
     protected $html = false;
 
+    /**
+     * Fix for WBCE 1.6.4 for PHP >= 8.2.x
+     * @var int@var integer
+     */
     protected int $_maxsize = 0;
 
     /**
