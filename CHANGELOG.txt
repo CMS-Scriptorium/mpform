@@ -5,6 +5,12 @@ MODULE VERSION HISTORY
 ======================
 
 ------------------------------------------------------------------------------------------------------------------------
+        *** 1.3.44 (Dietrich Roland Pehlke: 19-Mar-2026)
+        - add missing class properties declaration to get 
+          rid of php-deprecated notice.
+        - remove unneeded hidden file.
+        - fixed "missing captcha" warning.
+
         *** 1.3.44 (Martin Hecht: 7-Dec-2022)
         drop support for php 4 random number generator
 
