@@ -86,8 +86,22 @@ class HTTP_Upload extends HTTP_Upload_Error
      * e.g. file.txt.foo would have 'txt' and 'foo'
      * @var bool
      */
+    
     protected $_allowMultipleExtensions = false;
+    /**
+     * WBCE 1.6.x for PHP > 8.2
+     * 
+     * @var array
+     */
+    protected array $post_files = [];
 
+    /**
+     * WBCE 1.6.x for PHP > 8.2
+     * 
+     * @var string
+     */
+    protected string $content_type = "";
+    
     /**
      * PHP5 Constructor
      *
