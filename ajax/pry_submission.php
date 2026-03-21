@@ -30,7 +30,7 @@ require(WB_PATH.'/modules/admin.php');
 
 
 // Get id
-$filteredGetID = filter_input(INPUT_GET, 'submission_id', FILTER_VALIDATE_INT);
+$filteredGetID = filter_input(INPUT_GET, 'submission_id', FILTER_SANITIZE_NUMBER_INT);
 if(!isset($filteredGetID)) {
     #header("Location: ".ADMIN_URL."/pages/index.php");
     echo 'irgendwas geht nicht';
