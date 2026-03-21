@@ -522,9 +522,14 @@ if (!function_exists('eval_form')) {
                 $curr_field = '';
                 $post_field = '';
                 if($field['type'] != '') {
-                    if ((!empty($_POST['field'.$field_id]))
+                    $filteredPostFiledID = filter_input(
+                        INPUT_POST,
+                        'field'.$field_id,
+                        FILTER_SANITIZE_NUMBER_INT
+                    );
+                    if ((!empty($filteredPostFiledID))
                     or  ($admin->get_post('field'.$field_id) == "0")) { // added Apr 2009
-                        $post_field = $_POST['field'.$field_id];
+                        $post_field = $filteredPostFiledID;
                         $field_value = $post_field;
 
                         // copy user entered data to $_SESSION in case form must be
