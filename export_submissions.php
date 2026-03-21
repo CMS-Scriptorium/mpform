@@ -95,18 +95,20 @@ if($database->is_error()) {
 
 
 $submission_ids='';
+$filteredPostManageSubmissions = filter_input(INPUT_POST, 'manage_submissions');
 if(isset($_POST['manage_submissions_all'])){
     $submission_ids='ALL';
 } else {
-    if (isset($_POST['manage_submissions']) && is_array($_POST['manage_submissions'])){
-       $submission_ids=$_POST['manage_submissions'];
+    
+    if (isset($filteredPostManageSubmissions) && is_array($filteredPostManageSubmissions)){
+       $submission_ids=$filteredPostManageSubmissions;
     }
 }
 
 
 if(isset($_POST['delete'])){
     $admin->print_header();
-    foreach ($_POST['manage_submissions'] as $sid) {
+    foreach ($filteredPostManageSubmissions as $sid) {
         $submission_id=intval($sid);
         // find out section_id
         $res  = $database->query("SELECT "
