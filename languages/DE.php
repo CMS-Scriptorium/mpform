@@ -205,7 +205,8 @@ $LANG['backend'] = array(
                                    . "     HTML-Abschnitt verschieben. Wenn Sie die Optionen von %s\n"
                                    . "     &auml;ndern m&ouml;chten, m&uuml;ssen Sie den Code manuell\n"
                                    . "     anpassen (oder Sie starten von vorne indem Sie den Feldtyp\n"
-                                   . "     zur&uuml;ck auf bedingt angezeigter Block setzen)"
+                                   . "     zur&uuml;ck auf bedingt angezeigter Block setzen)",
+    'mod_are_you_sure'            => "Sind Sie sicher das Sie die ausgewählten Dateien löschen wollen?"
 );
 
 $LANG['backend_adv'] = array(

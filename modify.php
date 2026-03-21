@@ -75,7 +75,7 @@ $tpl->set_var(
         'TEXT_HEADING_S'     => $TEXT['SUBMISSIONS'],
         'TEXT_DELETE'        => $TEXT['DELETE'],
         'TEXT_ARE_YOU_SURE'  => str_replace(' ', '%20', $TEXT['ARE_YOU_SURE']),
-        'TXT_ARE_YOU_SURE'   => $TEXT['ARE_YOU_SURE'],
+        'TXT_ARE_YOU_SURE'   => $LANG['backend']['mod_are_you_sure'],
         'TEXT_FIELD'         => $TEXT['FIELD'],
         'TEXT_MOVE_UP'       => $TEXT['MOVE_UP'],
         'TEXT_MOVE_DOWN'     => $TEXT['MOVE_DOWN'],

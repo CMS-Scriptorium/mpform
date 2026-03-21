@@ -192,7 +192,8 @@ $LANG['backend'] = array(
                                    . "     sezione HTML. Se si modificano le opzioni di %s &egrave;\n"
                                    . "     necessario aggiornare questo codice manualmente\n"
                                    . "     (o si avvia di nuovo cambiando il tipo di nuovo al\n"
-                                   . "     blocco di visualizzazione condizionale) "
+                                   . "     blocco di visualizzazione condizionale) ",
+    'mod_are_you_sure'            => "Are you sure you want to delete the selected file[-s]?"
 );
 
 $LANG['backend_adv'] = array(

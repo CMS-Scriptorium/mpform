@@ -18,7 +18,7 @@
  **/
 
 /* The file NO.php provides strings in Norwegian language.
- * Filen NO.php inneholder Norske språk strenger.
+ * Filen NO.php inneholder Norske sprÃ¥k strenger.
  * Oversatt til Norsk av/ Translated ti Norwegian by: Odd Egil Hansen (oeh)
 */
 
@@ -192,7 +192,8 @@ $LANG['backend'] = array(
                                    . "     div-tag and everything that follows to another html section.\n"
                                    . "     If you change the options of %s you have to\n"
                                    . "     update this generated code manually (or you start again by\n"
-                                   . "     changing the type back to conditionally display block)"
+                                   . "     changing the type back to conditionally display block)",
+    'mod_are_you_sure'            => "Are you sure you want to delete the selected file[-s]?"
 );
 
 $LANG['backend_adv'] = array(

@@ -227,7 +227,8 @@ $LANG['backend'] = array(
                                    . "     cl&ocirc;ture et tout qui suit &agrave; une autre section html.\n"
                                    . "     Si vous modifiez les options de %s vous devez mettre \n"
                                    . "     &agrave; jour le code manuellement (ou vous commencez &agrave\n"
-                                   . "     nouveau en rechangeant le type a bloc conditionnel affich&eacute;)"
+                                   . "     nouveau en rechangeant le type a bloc conditionnel affich&eacute;)",
+    'mod_are_you_sure'          => "Êtes-vous sûr de vouloir supprimer les fichiers sélectionnés?"
 );
 
 $LANG['backend_adv'] = array(
