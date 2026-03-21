@@ -27,7 +27,8 @@ require_once(WB_PATH.'/framework/functions.php');
 
 #require_once(dirname(__FILE__) . '/info.php');
 
-$set_field = explode ( "-",$_POST['id'] ?? '');
+$filteredPostID = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_SPECIAL_CHARS);
+$set_field = explode ( "-",$filteredPostID ?? '');
 $page_field = $set_field[0];
 $field_id = $set_field[1];
 
@@ -59,7 +60,7 @@ if(isset($new_value) && $page_field == 'field'){
 if($database->is_error()) {
 
     #exit;
-    echo '<b>(nv:'.$new_value.'; field_id: '
+    echo '<b>(nv:'.htmlspecialchars($new_value).'; field_id: '
           .((method_exists( $admin, 'checkIDKEY' ))
             ? ($admin->checkIDKEY($set_field[1]))
             : ($set_field[1]))

@@ -30,12 +30,13 @@ require(WB_PATH.'/modules/admin.php');
 
 
 // Get id
-if(!isset($_GET['submission_id'])) {
+$filteredGetID = filter_input(INPUT_GET, 'submission_id', FILTER_VALIDATE_INT);
+if(!isset($filteredGetID)) {
     #header("Location: ".ADMIN_URL."/pages/index.php");
     echo 'irgendwas geht nicht';
     exit(0);
 } else {
-    $iSubmissionID = $_GET['submission_id'];
+    $iSubmissionID = $filteredGetID;
 }
 
 // Get submission details
