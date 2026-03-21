@@ -95,7 +95,11 @@ if($database->is_error()) {
 
 
 $submission_ids='';
-$filteredPostManageSubmissions = filter_input(INPUT_POST, 'manage_submissions');
+$filteredPostManageSubmissions = filter_input(
+    INPUT_POST,
+    'manage_submissions',
+    FILTER_SANITIZE_NUMBER_INT
+);
 if(isset($_POST['manage_submissions_all'])){
     $submission_ids='ALL';
 } else {
